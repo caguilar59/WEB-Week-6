@@ -1,0 +1,85 @@
+header {
+  background: url(images/central_park.jpg) no-repeat center top;
+  background-size: cover; /* Makes the image fully responsive */
+  height: 400px;
+  padding-top: 100px;
+  padding-left: 100px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  text-align: center;
+}
+
+  li {
+    list-style-type: none;
+    display: inline;
+    padding: 0 20px;
+  }
+  li a {
+    text-decoration: none; /* Remove Underline */
+  }
+  li a:link {
+    color: #000; /* Before Click */
+  }
+  li a:visited {
+    color:#818db3; /* After Click */
+  }
+  li a:hover {
+    color:#333; /* Mouse Over */
+  }
+  li a:active {
+    color:#753a30; /* Mouse Down */
+  }
+  nav {
+    background-color:rgb(255, 245, 238);
+    height: 50px;
+    text-align: center;
+    padding-top: 2px;
+  }
+  main {
+    margin: 50px;
+  }
+  main h1 {
+    color:rgb(129, 141, 179);
+    font-family: arial;
+  }
+  footer {
+    height: 40px;
+    background-color:rgb(129, 141, 179);
+    text-align: center;
+    padding-top: 20px;
+    color:rgb(211, 218, 240);
+  }
+/* Make the main area flexible */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Each card will take up equal space */
+.card {
+  flex: 1;
+  min-width: 300px; /* Prevents cards from becoming too small */
+}
+
+/* Make images responsive */
+.card img {
+  max-width: 100%;
+  height: auto;
+}
+
+  /* Responsive Design */
+@media (max-width: 599px) {
+  .cards {
+      flex-direction: column; /* Stack items vertically */
+      align-items: center;
+  }
+}
+
+@media (min-width: 600px) {
+  .cards {
+      flex-direction: row; /* Two columns */
+  }
+}

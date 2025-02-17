@@ -1,0 +1,26 @@
+nav {
+    background-color: #1a2e38;
+    opacity:1.0;
+    text-align: center;
+
+}
+nav img {
+    height: 100px;
+    width: 100%;
+}
+nav .navbar-link {
+    color: white;
+}
+#signin {
+    
+    border: #03B1F4;
+    background-color: #FFFFFF;
+    color: #03B1F4;
+}
+
+#about {
+    display: flex;
+    width: 100%;
+    position: relative;
+
+}
